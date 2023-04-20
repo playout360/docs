@@ -33,7 +33,7 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
-    // logo: '/assets/images/playout360_logo_tv_only.jpg',
+    logo: '/assets/images/playout360_logo_tv_only.jpg',
     // nav: [
     //   {
     //     text: 'Documentation',
