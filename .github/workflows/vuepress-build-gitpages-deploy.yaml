@@ -28,16 +28,16 @@ jobs:
       uses: jenkey2011/vuepress-deploy@master
       env:
         ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        TARGET_REPO: sp-convergence/payments-interoperability-layer
+        TARGET_REPO: playout360/docs
         TARGET_BRANCH: gh_pages
-        BUILD_SCRIPT: cd docs && npm install && npm run build
-        BUILD_DIR: .vuepress/dist/
+        BUILD_SCRIPT: yarn install && yarn run build
+        BUILD_DIR: src/.vuepress/dist/
     - name: Setup Pages
       uses: actions/configure-pages@v2
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
       with:
-        path: 'docs/.vuepress/dist/'
+        path: 'src/.vuepress/dist/'
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v1
