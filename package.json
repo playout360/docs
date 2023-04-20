@@ -1,0 +1,19 @@
+{
+  "name": "docs",
+  "version": "0.0.1",
+  "description": "Documentation for Playout360",
+  "main": "index.js",
+  "authors": {
+    "name": "Vijay",
+    "email": ""
+  },
+  "repository": "https://github.com/playout360/docs/docs",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
